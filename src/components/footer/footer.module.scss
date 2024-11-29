@@ -1,0 +1,29 @@
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.contato{
+    background-color: #005695;
+    color: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3%;
+    height: 10vh;
+    section{
+        width: 13vw;
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.direitosAutorais{
+    background-color: #232020;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 7vh;
+}
