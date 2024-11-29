@@ -68,3 +68,21 @@ header {
         cursor: pointer;
     }
 }
+
+@media (max-width: 780px){
+    header{
+        flex-direction: column;
+        justify-content: space-evenly;
+        height: 20vh;
+    }
+    .logoHeader{
+        width: 80vw;
+        justify-content: space-evenly;
+    }
+    .navHeader{
+        width: 90vw;
+    }
+    .barraDeBusca{
+        display: none;
+    }
+}

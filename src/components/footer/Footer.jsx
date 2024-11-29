@@ -9,7 +9,7 @@ export default function Footer() {
         <footer>
             <section class={s.contato}>
                 <p>4002-8922</p>
-                <section>
+                <section className={s.redesSociais}>
                     <img src={facebook} alt="" />
                     <img src={twitter} alt="" />
                     <img src={youtube} alt="" />

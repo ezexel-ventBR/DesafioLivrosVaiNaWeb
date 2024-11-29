@@ -1,7 +1,6 @@
 footer{
     display: flex;
     flex-direction: column;
-    justify-content: end;
 }
 
 .contato{
@@ -12,8 +11,8 @@ footer{
     align-items: center;
     padding: 3%;
     height: 10vh;
-    section{
-        width: 13vw;
+    .redesSociais{
+        width: 22%;
         display: flex;
         justify-content: space-between;
     }
@@ -26,4 +25,24 @@ footer{
     align-items: center;
     justify-content: center;
     height: 7vh;
+}
+
+@media (max-width: 780px){
+    .contato {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 15vh;
+        .redesSociais{
+            width: 60%;
+        }
+    }
+    .direitosAutorais{
+        height: 10vh;
+        text-align: center;
+        font-size: medium;
+        p{
+            width: 75%;
+        }
+    }
 }

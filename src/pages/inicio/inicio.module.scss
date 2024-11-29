@@ -17,9 +17,6 @@
         width: 25%;
         font-size: xx-large;
     }
-    img{
-        width: 100%;
-    }
 }
 
 .doar{
@@ -37,6 +34,7 @@
 .cards {
     display: flex;
     justify-content: space-between;
+
 }
 
 .card1, .card2, .card3, .card4{
@@ -58,3 +56,36 @@
     }
 }
     
+@media (max-width: 780px){
+    .bannerLivros{
+        background-position: center;
+        justify-content: center;
+        height: 60vh;
+        padding-left: 0;
+        h1{
+            width: 70%;
+            text-align: center;
+            font-size: x-large;
+        }
+    }
+    .doar{
+        text-align: center;
+        height: 150vh;
+    }
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        height: 80%;
+    }
+    .card1,.card2, .card3, .card4{
+        width: 80%;
+        height: 25vh;
+        img{
+            width: 20%;
+        }
+        p{
+            font-size: large;
+            width: 90%;
+        }
+    }
+}
