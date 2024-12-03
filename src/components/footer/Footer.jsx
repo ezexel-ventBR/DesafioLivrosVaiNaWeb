@@ -10,11 +10,11 @@ export default function Footer() {
             <section class={s.contato}>
                 <p>4002-8922</p>
                 <section className={s.redesSociais}>
-                    <img src={facebook} alt="" />
-                    <img src={twitter} alt="" />
-                    <img src={youtube} alt="" />
-                    <img src={linkedin} alt="" />
-                    <img src={instagram} alt="" />
+                    <img src={facebook} alt="icone do facebook" />
+                    <img src={twitter} alt="icone do twitter" />
+                    <img src={youtube} alt="icone do youtube" />
+                    <img src={linkedin} alt="icone do linkedin" />
+                    <img src={instagram} alt="icone do instagram" />
                 </section>
             </section>
             <section class={s.direitosAutorais}>

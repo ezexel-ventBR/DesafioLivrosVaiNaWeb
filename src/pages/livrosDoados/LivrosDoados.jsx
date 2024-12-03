@@ -3,6 +3,7 @@ import Livro from "../../assets/livro.png"
 export default function LivrosDoados() {
     return (
         <section class={s.livrosDoados}>
+            <h1>Livros Doados</h1>
             <section className={s.containerCards}>
                 <section className={s.cardLivro1}>
                     <img src={Livro} alt="Imagem do livro o protagonista" />
