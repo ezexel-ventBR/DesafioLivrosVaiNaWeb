@@ -1,5 +1,5 @@
 import vector from "../../assets/vector.png"
-import s from "./QueroDoar.module.scss"
+import s from "./queroDoar.module.scss"
 export default function QueroDoar() {
     return (
         <section class={s.queroDoar}>
