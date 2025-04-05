@@ -3,15 +3,21 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 80vh;
+    min-height: 100vh;
+    max-height: auto;
     h1{
         font-size: 32px;
+        margin-bottom: 10px;
+        margin-top: 10px;
     }
 }
 
 .containerCards{
-    height: 90%;
+    min-height: 100%;
     width: 90%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .cardLivro1 {
@@ -20,20 +26,33 @@
     align-items: center;
     justify-content: space-around;
     width: 15vw;
-    height: 42%;
+    min-height: 30vh;
+    max-height: auto;
+    margin-bottom: 10px;
     border: solid #005695;
     border-radius: 15px;
+    margin-right: 20px;
+    img{
+        width: 100px;
+        padding: 10px;
+        text-align: center;
+    }
     div{
         text-align: center;
+        width: 90%;
+        margin-bottom: 10px;
     }
 }
 
 @media (max-width: 780px) {
     .livrosDoados{
+        height: auto;
+        border: solid black;
         h1{
             display: flex;
             align-items: center;
             height: 20vh;
+            margin: none;
         }
     }
     .containerCards{
@@ -43,5 +62,6 @@
     .cardLivro1{
         width: 65%;
         height: 50%;
+        margin-bottom: 20px;
     }
 }

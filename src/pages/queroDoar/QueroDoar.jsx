@@ -30,30 +30,32 @@ export default function QueroDoar() {
             autor,
             image_url
         }
-
+        
         await axios.post("https://python-apilivros-vnw.onrender.com/doar", dadosPEnviar)
+        alert("Enviado")
+        window.location.reload()
     }
 
     return (
         <section class={s.queroDoar}>
             <p>Por favor, preencha o formulário com suas informações e as informações do Livro</p>
-            <form className={s.formDoar} onSubmit={(e) => e.preventDefault()}>
+            <form className={s.formDoar} onSubmit={(e) => {e.preventDefault()}}>
                 <section className={s.tituloForm}>
                     <img src={vector} alt="imagem de um livro azul com interior transparente" />
                     <p>Informações do Livro</p>
                 </section>
                 <section className={s.informacoesDoador}>
                     <section className={s.informacao}>
-                        <input type="text" placeholder="Titulo" onChange={capturaTitulo}/>
+                        <input type="text" placeholder="Titulo" onChange={capturaTitulo} required/>
                     </section>
                     <section className={s.informacao}>
-                        <input type="text" placeholder="Categoria" onChange={capturaCategoria}/>
+                        <input type="text" placeholder="Categoria" onChange={capturaCategoria} required/>
                     </section>
                     <section className={s.informacao}>
-                        <input type="text" placeholder="Autor" onChange={capturaAutor}/>
+                        <input type="text" placeholder="Autor" onChange={capturaAutor} required/>
                     </section>
                     <section className={s.informacao}>
-                        <input type="text" placeholder="Link da Imagem" onChange={capturaImage_url}/>
+                        <input type="text" placeholder="Link da Imagem" onChange={capturaImage_url} required/>
                     </section>
                 </section>
                 <section className={s.botaoDoar}>
