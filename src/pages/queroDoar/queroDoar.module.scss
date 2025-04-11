@@ -59,13 +59,16 @@
         border-radius: 17px;
         height: 6vh;
         width: 80%;
+        input:focus{
+            box-shadow: #0057958f 0px 0px 7px 7px;
+        }
     }
 
     .botaoDoar{
         button{
             border: none;
             background: none;
-            width: 100%;
+            width: 20%;
             height: 100%;
             font-size: larger;
             color: white;
@@ -73,14 +76,23 @@
         }
         display: flex;
         justify-content: center;
-        align-items: center;
+        align-items: start;
         border: solid #005695;
         border-radius: 10px;
         background-color: #005695;
         width: 50%;
         height: 7vh;
+        transition: 1s;
         &:hover{
-            background-color: #004b81;
+            //background-color: #004b81;
+            border: none;
+            button{
+                transition: width 500ms;
+                background-color: green;
+                border-radius: 10px;
+                font-size: larger;
+                width: 100%;
+            }
         }
     }
 }

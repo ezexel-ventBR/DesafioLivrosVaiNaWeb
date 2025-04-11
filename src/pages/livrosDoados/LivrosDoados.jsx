@@ -18,11 +18,13 @@ export default function LivrosDoados() {
 
     return (
         <section class={s.livrosDoados}>
-            <h1>Livros Doados</h1>
+            <section className={s.title}>
+                <h1>Livros Doados</h1>
+            </section>
             <section className={s.containerCards}>
                 {livros.map((item) => (
                 <section key={item.id} className={s.cardLivro1}>
-                    <img src={item.image_url} alt={"Imagem da capa do livro "} />
+                    <img src={item.image_url} alt={"Imagem do livro "} />
                     <div>
                         <p><b>{item.titulo}</b></p>
                         <p>{item.autor}</p>
