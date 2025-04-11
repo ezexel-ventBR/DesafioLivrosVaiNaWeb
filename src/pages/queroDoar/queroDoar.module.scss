@@ -83,6 +83,7 @@
         width: 50%;
         height: 7vh;
         transition: 1s;
+        @media (min-width: 781px){
         &:hover{
             //background-color: #004b81;
             border: none;
@@ -93,6 +94,7 @@
                 font-size: larger;
                 width: 100%;
             }
+        }
         }
     }
 }
@@ -119,6 +121,20 @@
             }
             img{
                 width: 50px;
+            }
+        }
+        .botaoDoar{
+            button{
+                width: 100%;
+                border-radius: 10px;
+            }
+            &:active{
+                border: solid green 1px;
+                transition: none;
+                transform: scale(0.95);
+                button{
+                    background-color: green;
+                }
             }
         }
     }
